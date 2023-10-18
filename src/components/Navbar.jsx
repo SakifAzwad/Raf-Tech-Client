@@ -14,17 +14,17 @@ const Navbar = () => {
   return (
     <div>
       <div className="py-2  bg-col1">
-        <div className="flex items-center justify-between">
+        <div className="flex md:pb-0 pb-2 items-center justify-between">
           <img
-            className="md:ml-8  h-20"
+            className="md:ml-8 h-12 md:h-20"
             src="https://i.ibb.co/N6ngXQs/cover.png"
             alt=""
           />
 
-          <div className="flex space-x-3">
+          <div className="flex md:space-x-3">
             {user ? (
               <>
-                <div className="flex space-x-3">
+                <div className="md:flex  md:space-x-3">
                 <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                   <div className="w-10 rounded-full">
                     <img src={user.photoURL} />
@@ -38,7 +38,7 @@ const Navbar = () => {
             ) : (
               <></>
             )}
-            <div className="space-x-3 pr-8">
+            <div className="space-x-3 pr-2 md:pr-8">
 
               {
                 user ? (
