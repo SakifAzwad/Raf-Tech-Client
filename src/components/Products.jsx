@@ -23,8 +23,8 @@ const Products = () => {
 
   return (
     <div className="bg-col4">
-      <div className="h-">
-        <div className="carousel w-full h-96">
+      <div className="">
+        <div className="carousel w-full lg:h-[600px] h-96">
           <div id="slide1" className="carousel-item relative w-full">
             <img src={car1} className="w-full" />
             <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -64,7 +64,7 @@ const Products = () => {
       <div>
         {prod.length ? (
           <>
-            <div className="grid lg:grid-cols-3 grid-cols-1 w-4/5 gap-8 mx-auto py-16">
+            <div className="grid lg:grid-cols-3 grid-cols-1 md:mx-auto md:w-4/5 gap-8 ml-4 py-16">
               {prod &&
                 prod?.map((pro) => (
                   <ShowProd key={pro.name} pro={pro}></ShowProd>

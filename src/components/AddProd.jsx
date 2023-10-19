@@ -8,9 +8,9 @@ const AddProd = () => {
           Add a Product
         </h1>
         <div className=" flex-col lg:flex-row-reverse pt-12 ">
-          <div className="card flex-shrink-0  mx-24 bg-col3 bg-opacity-40  shadow-2xl ">
+          <div className="card flex-shrink-0  md:mx-24 bg-col3 bg-opacity-40  shadow-2xl ">
             <form className="card-body">
-            <div className="flex space-x-8">
+            <div className="md:flex md:space-x-8">
                 <div className="form-control w-full">
                   <label className="label">
                     <span className="label-text text-col4">Image URL</span>
@@ -36,7 +36,7 @@ const AddProd = () => {
                   />
                 </div>
               </div>
-              <div className="flex space-x-8">
+              <div className="md:flex md:space-x-8">
                 <div className="form-control w-full">
                   <label className="label">
                     <span className="label-text text-col4">Brand Name</span>
@@ -62,7 +62,7 @@ const AddProd = () => {
                   />
                 </div>
               </div>
-              <div className="flex space-x-8">
+              <div className="md:flex md:space-x-8">
                 <div className="form-control w-full">
                   <label className="label">
                     <span className="label-text text-col4">Price</span>

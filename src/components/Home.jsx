@@ -16,8 +16,8 @@ const Home = () => {
         <div className="hero-overlay bg-opacity-80"></div>
         <div className="hero-content text-center text-neutral-content">
           <div className="">
-            <h1 className="mb-5 text-col3 text-8xl font-extrabold">Raf Tech</h1>
-            <p className="mb-5 text-col4 text-5xl">
+            <h1 className="mb-5 text-col3 text-5xl md:text-8xl font-extrabold">Raf Tech</h1>
+            <p className="mb-5 text-col4 text-2xl md:text-5xl">
               {" "}
               Where Technology Enthusiasts Unite to Explore, Discover, and
               Experience the Latest Innovations in the World of Cutting-Edge

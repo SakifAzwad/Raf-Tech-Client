@@ -2,11 +2,13 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/jsx-key */
 
+import { Link } from "react-router-dom";
+
 const ShowProd = ({ pro }) => {
-  const { name, image, brand_name, type, price, rating, details } = pro;
+  const { _id,name, image, brand_name, type, price, rating, details } = pro;
   return (
     <div>
-      <div className="card w-96 bg-base-100 shadow-xl">
+      <div className="card w-96 bg-green-100 shadow-xl">
         <figure>
           <img src={image} className="h-36 pt-2" alt="Shoes" />
         </figure>
@@ -28,7 +30,11 @@ const ShowProd = ({ pro }) => {
             </div>
             </div>
 
-          
+            <div className="flex space-x-2 w-full">
+            <Link className="w-full" to={`/product/${_id}`}><button className="btn bg-col1 border-col2 text-col4 hover:bg-col4 hover:text-col1 w-full hover:border hover:border-slate-400">Details</button></Link>
+            <Link className="w-full"><button className="btn bg-col1 border-col2 text-col4 hover:bg-col4 hover:text-col1 w-full  hover:border hover:border-slate-400">Update</button></Link>
+            </div>
+
         </div>
       </div>
     </div>
