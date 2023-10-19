@@ -8,7 +8,7 @@ import { AuthCon } from "../components/Provider/AuthProv";
 const PrivateRoute = ({children}) => {
 
     const loc = useLocation();
-
+    // console.log(loc);
     const {user,loading}=useContext(AuthCon);
 
     
