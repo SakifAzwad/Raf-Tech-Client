@@ -12,6 +12,7 @@ import SignUp from "./components/SignUp";
 import AuthProv from "./components/Provider/AuthProv";
 import ErrorPage from "./components/ErrorPage";
 import PrivateRoute from "./Private/PrivateRoute";
+import Products from "./components/Products";
 
 const router = createBrowserRouter([
   {
@@ -39,6 +40,11 @@ const router = createBrowserRouter([
       {
         path: "/signup",
         element: <SignUp></SignUp>,
+      },
+      {
+        path: "/products/:id",
+        element: <PrivateRoute><Products></Products></PrivateRoute>,
+        loader :({params})=>fetch(`http://localhost:5000/brandname/${params.id}`)
       },
     ],
   },
