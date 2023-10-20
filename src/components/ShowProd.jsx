@@ -32,7 +32,7 @@ const ShowProd = ({ pro }) => {
 
             <div className="flex space-x-2 w-full">
             <Link className="w-full" to={`/product/${_id}`}><button className="btn bg-col1 border-col2 text-col4 hover:bg-col4 hover:text-col1 w-full hover:border hover:border-slate-400">Details</button></Link>
-            <Link className="w-full"><button className="btn bg-col1 border-col2 text-col4 hover:bg-col4 hover:text-col1 w-full  hover:border hover:border-slate-400">Update</button></Link>
+            <Link className="w-full" to={`/updateprod/${_id}`}><button className="btn bg-col1 border-col2 text-col4 hover:bg-col4 hover:text-col1 w-full  hover:border hover:border-slate-400">Update</button></Link>
             </div>
 
         </div>
