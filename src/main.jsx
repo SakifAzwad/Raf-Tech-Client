@@ -25,7 +25,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
-        loader :()=>fetch('http://localhost:5000/brandname')
+        loader :()=>fetch('https://raf-tech-server.vercel.app/brandname')
       },
       {
         path: "/addproduct",
@@ -34,6 +34,7 @@ const router = createBrowserRouter([
       {
         path: "/mycart",
         element: <PrivateRoute><MyCart></MyCart></PrivateRoute>,
+        loader:()=>fetch('https://raf-tech-server.vercel.app/usercart')
       },
       {
         path: "/login",
@@ -46,17 +47,17 @@ const router = createBrowserRouter([
       {
         path: "/products/:id",
         element: <PrivateRoute><Products></Products></PrivateRoute>,
-        loader :({params})=>fetch(`http://localhost:5000/brandname/${params.id}`)
+        loader :({params})=>fetch(`https://raf-tech-server.vercel.app/brandname/${params.id}`)
       },
       {
         path:'/product/:id',
         element:<PrivateRoute><Product></Product></PrivateRoute>,
-        loader:()=>fetch('http://localhost:5000/products')
+        loader:()=>fetch('https://raf-tech-server.vercel.app/products')
       },
       {
         path:'/updateprod/:id',
         element:<PrivateRoute><UpdateProd></UpdateProd></PrivateRoute>,
-        loader:({params})=>fetch(`http://localhost:5000/products2/${params.id}`),
+        loader:({params})=>fetch(`https://raf-tech-server.vercel.app/products2/${params.id}`),
       },
     ],
   },

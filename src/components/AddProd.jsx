@@ -28,7 +28,7 @@ const AddProd = () => {
 
     console.log(newprod);
 
-    fetch('http://localhost:5000/products',
+    fetch('https://raf-tech-server.vercel.app/products',
     {
       method:'POST',
       headers:

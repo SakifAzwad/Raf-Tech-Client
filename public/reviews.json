@@ -1,0 +1,45 @@
+[
+  {
+    "id": 1,
+    "name": "Jessica Smith",
+    "location": "New York, NY",
+    "rate": 5,
+    "comment": "Raf Tech's website design is sleek and modern, and they offer a fantastic range of brands. I appreciate the detailed product descriptions and customer reviews that help me make informed decisions. The only improvement I'd suggest is a live chat support feature."
+  },
+  {
+    "id": 2,
+    "name": "John Johnson",
+    "location": "Los Angeles, CA",
+    "rate": 4,
+    "comment": "Raf Tech has become my favorite online tech store. Their quick response to inquiries and the quality of their products are impressive. The shipment arrived on time, and I even received a discount code for my next purchase. I'm a happy customer!"
+  },
+  {
+    "id": 3,
+    "name": "Anna Davis",
+    "location": "Chicago, IL",
+    "rate": 5,
+    "comment": "I've been a Raf Tech customer for years, and it's been mostly great. The one thing that could make it perfect is if they expanded their product range even further, especially in the gaming section. But the customer service and return policy are excellent."
+  },
+  {
+      "id": 4,
+      "name": "Sophie Anderson",
+      "location": "Miami, FL",
+      "rate": 5,
+      "comment": "Raf Tech is my go-to destination for all things tech! The wide variety of products and brands is impressive. I recently purchased a new smartphone, and the user-friendly interface made the checkout process a breeze. I couldn't be happier with my purchase!"
+    },
+    {
+      "id": 5,
+      "name": "Robert Davis",
+      "location": "San Francisco, CA",
+      "rate": 4,
+      "comment": "I've been a loyal Raf Tech customer for a while now. The product selection is outstanding, and the prices are competitive. The only reason I'm not giving it a full five stars is that the delivery took a bit longer than expected on my last order."
+
+    },
+    {
+      "id": 6,
+      "name": "Ella Ramirez",
+      "location": "Austin, TX",
+      "rate": 5,
+      "comment": "As a tech enthusiast, Raf Tech is a paradise for me. I've found some rare gadgets here that I couldn't find anywhere else. The website is well-organized, and their customer support is top-notch. Highly recommended!"
+    }
+]

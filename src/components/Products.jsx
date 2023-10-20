@@ -13,7 +13,7 @@ const Products = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/products/${name}`)
+    fetch(`https://raf-tech-server.vercel.app/products/${name}`)
       .then((res) => res.json())
       .then((data) => {
         setLoading(false);

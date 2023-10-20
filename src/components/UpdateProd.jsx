@@ -30,7 +30,7 @@ const UpdateProd = () => {
 
     const newprod = { image, name, brand_name, type, price, rating,details };
 
-    fetch(`http://localhost:5000/products2/${_id}`,
+    fetch(`https://raf-tech-server.vercel.app/products2/${_id}`,
         {
           method:'PUT',
           headers:

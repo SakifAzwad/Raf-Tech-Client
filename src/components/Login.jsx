@@ -17,7 +17,7 @@ const Login = () => {
     .then((result)=>
     {
       const p=result.user.displayName;
-      swal(`Welcome Back ${p}!`,`You've successfully logged in to Raf Events.`, "success");
+      swal(`Welcome Back ${p}!`,`You've successfully logged in to Raf Tech.`, "success");
       navigate(location?.state ? location.state : '/');
     })
     .catch(error=>
