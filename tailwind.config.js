@@ -20,4 +20,5 @@ export default {
   daisyui: {
     themes: ["light"],
   },
+  darkMode: "class",
 };
