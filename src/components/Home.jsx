@@ -5,7 +5,7 @@ import ReviewSection from "./ReviewSection";
 
 const Home = () => {
   const datas = useLoaderData();
-  const [reviews]=useRating();
+  const [reviews] = useRating();
 
   return (
     <div>
@@ -44,8 +44,8 @@ const Home = () => {
           Frequently Asked Questions{" "}
         </h1>
         <div className="text-center  text-col4 px-12 bg-col4">
-          <div className="collapse collapse-plus my-4 bg-col1 ">
-          <input type="radio" name="my-accordion-3" checked="checked" /> 
+           <div className="collapse my-4 bg-col1">
+          <input type="checkbox" />
             <div className="collapse-title text-xl font-medium">
             How do I place an order on Raf Tech?
             </div>
@@ -53,8 +53,8 @@ const Home = () => {
               <p>To place an order on Raf Tech, simply browse the products, select the item you want, and click the Add to Cart button. Once youve added all the items you wish to purchase, click on the shopping cart icon, review your items, and proceed to the checkout process to complete your order.</p>
             </div>
           </div>
-          <div className="collapse collapse-plus my-4 bg-col1 ">
-          <input type="radio" name="my-accordion-3"  /> 
+          <div className="collapse my-4 bg-col1">
+          <input type="checkbox" />
             <div className="collapse-title text-xl font-medium">
             What payment methods are accepted on Raf Tech?
             </div>
@@ -62,8 +62,8 @@ const Home = () => {
               <p>Raf Tech accepts a variety of payment methods, including credit/debit cards, PayPal, and other secure online payment options. During the checkout process, you can choose your preferred payment method.</p>
             </div>
           </div>
-          <div className="collapse collapse-plus mt-4 bg-col1 ">
-          <input type="radio" name="my-accordion-3"  /> 
+          <div className="collapse  bg-col1">
+          <input type="checkbox" />
             <div className="collapse-title text-xl font-medium">
             What is Raf Tech`s return and refund policy?
             </div>
@@ -73,12 +73,14 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div  className="bg-col4 pt-4">
-            <h1 className="text-center text-5xl font-bold text-col1 pt-4">Customer Reviews</h1>
-        </div>
-      <div className="bg-col4" >
-            <ReviewSection reviews={reviews}></ReviewSection>
-        </div>
+      <div className="bg-col4 pt-4">
+        <h1 className="text-center text-5xl font-bold text-col1 pt-4">
+          Customer Reviews
+        </h1>
+      </div>
+      <div className="bg-col4">
+        <ReviewSection reviews={reviews}></ReviewSection>
+      </div>
     </div>
   );
 };
