@@ -111,12 +111,12 @@ const AddProd = () => {
                       onChange={handleOptionChange}
                       className="input input-bordered"
                     >
-                      <option value="option1">GOOGLE</option>
-                      <option value="option2">ASUS</option>
-                      <option value="option3">SAMSUNG</option>
-                      <option value="option4">APPLE</option>
-                      <option value="option5">HUAWEI</option>
-                      <option value="option6">SONY</option>
+                      <option value="GOOGLE">GOOGLE</option>
+                      <option value="ASUS">ASUS</option>
+                      <option value="SAMSUNG">SAMSUNG</option>
+                      <option value="APPLE">APPLE</option>
+                      <option value="HUAWEI">HUAWEI</option>
+                      <option value="SONY">SONY</option>
                     </select>
                   </div>
                   <div className="form-control w-full">
